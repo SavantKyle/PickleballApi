@@ -46,6 +46,7 @@
     <Compile Include="Domain\StripePaymentRequest.cs" />
     <Compile Include="Entity\Partner.cs" />
     <Compile Include="Entity\Player.cs" />
+    <Compile Include="Entity\PlayerLooking.cs" />
     <Compile Include="Entity\Rating.cs" />
     <Compile Include="Enum\FormatTypeEnum.cs" />
     <Compile Include="Enum\GenderEnum.cs" />

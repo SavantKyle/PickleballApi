@@ -21,4 +21,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="DoublesPartnerId" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="62222e71-75b1-45aa-8a5e-ea9ffa1d176f" ChangeDateTime="03/12/2019 01:15:21">
+    <Property Name="ElementName" Value="[dbo].[PlayersLooking].[LookingFor]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PlayersLooking]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LookingForMixed" />
+  </Operation>
 </Operations>

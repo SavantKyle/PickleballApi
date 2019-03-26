@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using Facade.Contracts;
 using Models.Domain;
+using NLog;
 using Service.Contracts;
 
 namespace pickleballApi.Controllers
@@ -13,6 +14,7 @@ namespace pickleballApi.Controllers
     [RoutePrefix("api/Register")]
     public class RegisterController : ApiController
     {
+        private static Logger logger = LogManager.GetCurrentClassLogger();
         private readonly IRegisterFacade _registerFacade;
         private readonly IStripePaymentService _stripePaymentService;
 
@@ -53,6 +55,7 @@ namespace pickleballApi.Controllers
             }
             catch (Exception ex)
             {
+                logger.Error(ex, ex.Message);
                 throw new HttpResponseException(
                     new HttpResponseMessage(HttpStatusCode.PaymentRequired)
                     {

@@ -40,6 +40,8 @@ namespace pickleballApi.App_Start
             builder.RegisterType<PartnerService>().As<IPartnerService>().InstancePerRequest();
             builder.RegisterType<PartnerMapper>().As<IPartnerMapper>().InstancePerRequest();
             builder.RegisterType<PlayerService>().As<IPlayerService>().InstancePerRequest();
+            builder.RegisterType<PlayerLookingService>().As<IPlayerLookingService>().InstancePerRequest();
+            builder.RegisterType<PlayerLookingFacade>().As<IPlayerLookingFacade>().InstancePerRequest();
             builder.RegisterType<PlayerMapper>().As<IPlayerMapper>().InstancePerRequest();
             builder.RegisterType<RatingService>().As<IRatingService>().InstancePerRequest();
 

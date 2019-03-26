@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IPartnerService.cs" />
+    <Compile Include="IPlayerLookingService.cs" />
     <Compile Include="Mappers\IPartnerMapper.cs" />
     <Compile Include="Mappers\IPlayerMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -57,6 +57,7 @@
     <Compile Include="Mappers\PartnerMapper.cs" />
     <Compile Include="Mappers\PlayerMapper.cs" />
     <Compile Include="PartnerService.cs" />
+    <Compile Include="PlayerLookingService.cs" />
     <Compile Include="PlayerService.cs" />
     <Compile Include="RatingService.cs" />
     <Compile Include="StripePaymentService.cs" />
